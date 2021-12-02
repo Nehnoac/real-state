@@ -1,0 +1,171 @@
+// Section about us
+.section-about-us {
+  .icons-us {
+    @include grid(3, 2rem);
+    @include phone {
+      @include grid(1, 2rem);
+    }
+  }
+
+  .icon {
+    text-align: center;
+    img {
+      height: 10rem;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Section properties
+.section-properties {
+  &__container {
+    @include grid(3, 2rem);
+    @include phone {
+      @include grid(1, 2rem);
+    }
+  }
+
+  .yellow-button {
+    @include button($yellow, block);
+  }
+}
+
+.green-button {
+  @include button($green, block);
+}
+
+// Contacto
+
+.contact-site {
+  background-image: url(../img/encuentra.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: $separation * 2 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: $separation / 2 (-$separation / 2);
+
+  @include phone {
+    padding: $separation 0;
+  }
+
+  h2,
+  p {
+    color: $white;
+  }
+
+  h2 {
+    font-weight: $extra-bold;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .yellow-button {
+    @include button($yellow, inline);
+  }
+}
+
+// Blog
+
+.blog-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2rem;
+
+  @include phone {
+    @include grid(1, 2rem);
+  }
+}
+
+.blog-entry {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2rem;
+
+  @include phone {
+    @include grid(1, 2rem);
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__text {
+    a {
+      color: $black;
+    }
+
+    h4 {
+      margin: 0;
+      line-height: 1.4;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 15rem;
+        height: 0.5rem;
+        background-color: $green;
+        margin-top: 1rem;
+      }
+    }
+
+    span {
+      color: $yellow;
+    }
+  }
+}
+
+// Comentarios
+
+.coments {
+  margin: 0 $separation * 2;
+
+  @include desktop {
+    margin: 0;
+  }
+}
+
+.coment {
+  background-color: $green;
+  padding: 2rem;
+  color: $white;
+  border-radius: 2rem;
+
+  blockquote {
+    padding-left: $separation;
+    position: relative;
+
+    @include tablet {
+      margin: 2rem 1rem;
+      padding-left: $separation / 2;
+    }
+
+    &::before {
+      content: '';
+      background-image: url(../img/comilla.svg);
+      background-repeat: no-repeat;
+      width: 5rem;
+      height: 6rem;
+      display: block;
+      position: absolute;
+      left: -2rem;
+
+      @include tablet {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  p {
+    text-align: right;
+    color: $white;
+    font-size: 1.3rem;
+  }
+}

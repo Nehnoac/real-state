@@ -1,0 +1,75 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $dark-grey;
+  padding: 0 $separation;
+  height: $header-height;
+
+  @include tablet {
+    padding: 0 $separation / 2;
+  }
+
+  @include phone {
+    flex-direction: column;
+    height: $header-height-phone;
+    justify-content: center;
+  }
+
+  &.index {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 70rem;
+    padding: $separation;
+    background-image: url(../../assets/img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    @include phone {
+      justify-content: space-between;
+      padding: $separation / 2;
+    }
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @include phone {
+      flex-direction: column;
+    }
+
+    .dark-mode-button,
+    .light-mode-button {
+      width: 2rem;
+      height: 2rem;
+      filter: invert(100%);
+      cursor: pointer;
+      display: block;
+    }
+  }
+
+  h1 {
+    text-align: left;
+    color: $white;
+    font-weight: $bold;
+    line-height: 2;
+    max-width: 60rem;
+    margin: 0;
+    @include phone {
+      text-align: center;
+    }
+  }
+
+  & .navbar {
+    @include phone {
+      margin-top: 3rem;
+    }
+
+    a:hover {
+      color: $green;
+    }
+  }
+}

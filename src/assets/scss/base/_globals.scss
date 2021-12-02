@@ -1,0 +1,84 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: $principal-font;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+main {
+  padding: 0 $separation;
+  min-height: $main-heigth;
+
+  @include tablet {
+    padding: 0 $separation / 2;
+  }
+
+  @include phone {
+    min-height: $main-heigth-phone;
+  }
+}
+
+p {
+  color: $black;
+  font-size: 1.8rem;
+
+  @include tablet {
+    font-size: 1.6rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $principal-font;
+  margin: $separation / 2 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.6rem;
+}
+
+@include phone {
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+}

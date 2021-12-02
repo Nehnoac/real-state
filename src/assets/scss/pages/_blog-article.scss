@@ -1,0 +1,19 @@
+.blog-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__image {
+      max-width: 120rem;
+      &-info {
+        span {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.sale__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__price {
+		color: $green;
+		font-weight: $bold;
+		font-size: 3rem;
+	}
+
+	&__services {
+		display: flex;
+		list-style: none;
+		padding: 0 1rem;
+		max-width: 50rem;
+		li {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			&:not(:last-of-type) {
+				margin-right: 2rem;
+			}
+			img {
+				flex: 0 0 2rem;
+				margin-right: 1rem;
+			}
+
+			p {
+				font-weight: $extra-bold;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+
+// Fuentes
+$principal-font: "Lato", sans-serif;
+
+// Tamaño de Media Queries
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Colores
+$black: #000000;
+$yellow: #e08709;
+$green: #71b100;
+$white: #ffffff;
+$grey: #e1e1e1;
+$dark-grey: #333333;
+
+$separation: 5rem;
+
+// Fuentes
+$thin: 300;
+$regular: 400;
+$bold: 700;
+$extra-bold: 900;
+
+// Header
+$header-height: 90px;
+$header-height-phone: 150px;
+
+// Footer
+$footer-height: 80px;
+
+// Main
+$main-heigth: calc(100vh - (#{$header-height} + #{$footer-height}));
+$main-heigth-phone: calc(100vh - (#{$header-height-phone} + #{$footer-height}));

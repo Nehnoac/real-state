@@ -1,0 +1,25 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/globals';
+@import 'base/dark-mode';
+@import 'base/normalize';
+@import 'base/utilities';
+
+// UI
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/navigation';
+
+// Components
+@import 'components/blog-entry';
+@import 'components/property-card';
+
+// Pages
+@import 'pages/home';
+@import 'pages/blog';
+@import 'pages/anuncio';
+@import 'pages/about-us';
+@import 'pages/contacto';
+@import 'pages/properties';
+@import 'pages/blog-article';

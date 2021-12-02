@@ -1,0 +1,69 @@
+.dark-mode {
+	background-color: darken($dark-grey, 10);
+
+	p {
+		color: $white;
+	}
+
+	a,
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: $grey;
+	}
+
+	.property-card {
+		background-color: $dark-grey;
+		border: 1px solid $dark-grey;
+
+		&__services {
+			img {
+				filter: invert(100%);
+			}
+		}
+	}
+
+	form {
+		p {
+			color: darken($white, 3);
+		}
+
+		legend {
+			color: $white;
+		}
+
+		label {
+			color: $white;
+		}
+
+		input {
+			background-color: $dark-grey !important;
+			border: 1px solid $dark-grey !important;
+			color: $white !important;
+		}
+
+		textarea,
+		select {
+			background-color: $dark-grey;
+			color: $white;
+			border: 1px solid $dark-grey;
+		}
+	}
+
+	.blog-entry__button {
+		border: none;
+	}
+
+	.sale__info {
+		&__price {
+			color: $green;
+		}
+
+		&__services {
+			img {
+				filter: invert(100%);
+			}
+		}
+	}
+}

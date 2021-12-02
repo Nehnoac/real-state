@@ -1,0 +1,38 @@
+footer {
+	padding: $separation / 2 $separation;
+	background-color: $dark-grey;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	height: $footer-height;
+
+	a:hover {
+		color: $green;
+	}
+
+	@include tablet {
+		flex-direction: column;
+		padding: $separation / 4 $separation / 2;
+		justify-content: center;
+		.navbar {
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-bottom: 1rem;
+			a {
+				&:not(:last-child) {
+					margin-right: 2rem;
+				}
+			}
+		}
+	}
+
+	.copyright {
+		margin: 0;
+		color: $white;
+
+		@include tablet {
+			font-size: 1.4rem;
+			text-align: center;
+		}
+	}
+}

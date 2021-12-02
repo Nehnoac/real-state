@@ -1,0 +1,12 @@
+.properties {
+  &__container {
+    @include grid(3, 2rem);
+    @include phone {
+      @include grid(1, 2rem);
+    }
+  }
+
+  .yellow-button {
+    @include button($yellow, block);
+  }
+}

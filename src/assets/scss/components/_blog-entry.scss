@@ -1,0 +1,37 @@
+.blog-entry {
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__image {
+    cursor: pointer;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 1px 5px;
+    width: fit-content;
+    border-bottom: 1px solid $black;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active {
+      color: $white;
+      border-bottom: none;
+      border-radius: 2px;
+      background-color: $green;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 1rem 2rem rgba($black, 0.15);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+    }
+  }
+}

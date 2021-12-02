@@ -1,0 +1,12 @@
+.section {
+	margin-top: $separation / 2;
+	margin-bottom: $separation / 2;
+}
+.center-content {
+	max-width: 1200px;
+	margin: auto;
+}
+.align-rigth {
+	display: flex;
+	justify-content: flex-end;
+}
